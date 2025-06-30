@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Inmobiliaria</display-name>
+
+    <!-- Servlet: Listar Inmuebles -->
+    <servlet>
+        <servlet-name>ListarInmueblesServlet</servlet-name>
+        <servlet-class>controlador.ListarInmueblesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListarInmueblesServlet</servlet-name>
+        <url-pattern>/inmuebles</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet: Detalle de Inmueble -->
+    <servlet>
+        <servlet-name>DetalleInmuebleServlet</servlet-name>
+        <servlet-class>controlador.DetalleInmuebleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetalleInmuebleServlet</servlet-name>
+        <url-pattern>/detalle-inmueble</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet: Listar Terrenos -->
+    <servlet>
+        <servlet-name>ListarTerrenosServlet</servlet-name>
+        <servlet-class>controlador.ListarTerrenosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListarTerrenosServlet</servlet-name>
+        <url-pattern>/terrenos</url-pattern>
+    </servlet-mapping>
+
+    <!-- Página de bienvenida -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
